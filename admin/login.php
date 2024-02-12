@@ -11,13 +11,7 @@
                     </div>
                     <div class="mb-4">
                         <h5>Welcome Back !</h5>
-                        <p class="text-danger">
-                            <?php
-                                if(isset($_POST['logmit']) && !isset($_SESSION['login'])){
-                                    echo "Wrong username or password.";
-                                }
-                            ?>
-                        </p>
+                        <p class="text-danger showMsg"></p>
                     </div>
                     <form method="post">
                         <div class="form-floating form-floating-custom mb-3">
@@ -44,7 +38,7 @@
                         </div>
 
                         <div class="mt-3">
-                            <button class="btn btn-info w-100" type="submit" name="logmit">Log In</button>
+                            <button class="btn btn-info w-100" type="submit" name="logmit" id="logBtn">Log In</button>
                         </div>
 
                         <div class="mt-4">

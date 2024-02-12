@@ -43,7 +43,9 @@
                                 </div>
                                 <div class="mb-4">
                                     <h5 class="">Register Account</h5>
-                                    <p>Get your free Dashonic account now.</p>
+                                    <p>
+                                        <?=(isset($_GET['err'])) ? 'User Found.' : ''?>
+                                    </p>
                                 </div>
                                 <form method="post" action="signup.php">
                                     <div class="form-floating form-floating-custom mb-3">

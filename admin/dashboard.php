@@ -1,8 +1,12 @@
 <?php
-
-    include "./includes/topbar.php";
     include "./includes/sidebar.php";
 
+
+    ?>
+    <div class="main-content">
+        <?=include "./includes/topbar.php";?>
+        <div class="page-content">
+    <?php
     if(!isset($_GET['route'])){
         include "./pages/home.php";
     }else{
@@ -11,3 +15,5 @@
     }
 
 ?>
+</div>
+</div>

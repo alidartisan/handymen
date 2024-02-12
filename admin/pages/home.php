@@ -1,5 +1,6 @@
-<div class="main-content">
-            <div class="page-content">
+
+
+            
                 <div class="container-fluid">
                     <!-- start page title -->
                     <div class="row">
@@ -873,8 +874,6 @@
 
                 </div>
                 <!-- container-fluid -->
-            </div>
-            <!-- End Page-content -->
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -890,4 +889,3 @@
                     </div>
                 </div>
             </footer>
-        </div>

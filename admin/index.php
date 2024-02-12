@@ -33,7 +33,7 @@
 
             if(isset($_POST['logmit'])){
                 $user = $_POST['username'];
-                $pass = $_POST['password'];
+                $pass = sha1(md5($_POST['password']));
 
                 $check = mysqli_query($conn, "SELECT * FROM users WHERE username = '$user' AND password = '$pass'");
                 if(mysqli_num_rows($check)){
@@ -56,6 +56,7 @@
     <!-- END layout-wrapper -->
 
     <!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/metismenujs/metismenujs.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
@@ -71,6 +72,7 @@
     <script src="assets/js/pages/dashboard-sales.init.js"></script>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
 
     </body>
 </html>
